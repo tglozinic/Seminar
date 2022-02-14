@@ -11,7 +11,7 @@ using System.Media;
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Stopwatch : Form
     {
 
         int seconds, stotinka;
@@ -20,7 +20,7 @@ namespace WinFormsApp1
        
 
 
-        public Form1()
+        public Stopwatch()
         {
             InitializeComponent();
         }
@@ -70,9 +70,6 @@ namespace WinFormsApp1
                 Reset();
 
             }
-
-
-
 
         }
 

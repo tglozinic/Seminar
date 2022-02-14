@@ -1,7 +1,7 @@
 ﻿
 namespace WinFormsApp1
 {
-    partial class Form1
+    partial class Stopwatch
     {
         /// <summary>
         ///  Required designer variable.
@@ -168,10 +168,11 @@ namespace WinFormsApp1
             this.buttonResume.UseVisualStyleBackColor = true;
             this.buttonResume.Click += new System.EventHandler(this.buttonResume_Click);
             // 
-            // Form1
+            // Stopwatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClientSize = new System.Drawing.Size(481, 342);
             this.Controls.Add(this.buttonResume);
             this.Controls.Add(this.label3);
@@ -184,7 +185,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.labelSeconds);
             this.Controls.Add(this.labelMinutes);
             this.Controls.Add(this.label2);
-            this.Name = "Form1";
+            this.Name = "Stopwatch";
             this.Text = "Stopwatch";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
