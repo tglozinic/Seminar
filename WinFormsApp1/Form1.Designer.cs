@@ -148,9 +148,9 @@ namespace WinFormsApp1
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(46, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 15);
+            this.label3.Size = new System.Drawing.Size(254, 15);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Unesi minute odbrojavanja pa klikni START";
+            this.label3.Text = "Unesi broj minuta odbrojavanja pa klikni START";
             // 
             // timer2
             // 
@@ -185,7 +185,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.labelMinutes);
             this.Controls.Add(this.label2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Stopwatch";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

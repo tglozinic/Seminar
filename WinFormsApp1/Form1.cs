@@ -17,7 +17,7 @@ namespace WinFormsApp1
         int seconds, stotinka;
         bool active;
         int unosMin;
-        bool valid;
+       
 
 
         public Form1()
@@ -50,17 +50,29 @@ namespace WinFormsApp1
             Reset();
         }
 
-
         //izvršava se kod pritiska na gumb "START"
             // podešvanje početnih vrijednosti na štoperici
             // čitanje vrijednosti s labele i pretvaranje u oblik integer
             // pokretanje timera
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            unosMin = Int32.Parse(textBoxUnosMinuta.Text) - 1;
-            seconds = 59;
-            stotinka = 100;
-            active = true;
+            try
+            {
+                unosMin = Int32.Parse(textBoxUnosMinuta.Text) - 1;
+                seconds = 59;
+                stotinka = 100;
+                active = true;
+
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Unesite pravilno vrijeme");
+                Reset();
+
+            }
+
+
+
 
         }
 
